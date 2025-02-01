@@ -1,183 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Tags Documentation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        pre {
-            background: #eee;
-            padding: 10px;
-            border-radius: 5px;
-            overflow-x: auto;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-        table, th, td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: left;
-        }
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhanced HTML Elements Showcase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e3f2fd;
+    }
+    .navbar {
+      background: #0d47a1;
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .navbar a:hover {
+      color: #ffeb3b;
+    }
+    .container {
+      padding-top: 80px;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+    section {
+      margin-bottom: 40px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: left;
+    }
+    img, video {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: auto;
+      border-radius: 10px;
+    }
+    button {
+      background: #0d47a1;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #1976d2;
+    }
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+    form label {
+      font-weight: bold;
+    }
+    .inline-group {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+  </style>
 </head>
 <body>
-
-    <div class="container">
-        <h1>HTML Tags Documentation</h1>
-        <p>This page provides a brief overview of common HTML tags with examples.</p>
-
-        <h2>1. Headings</h2>
-        <p>HTML provides six levels of headings:</p>
-        <pre>
-&lt;h1&gt;Heading 1&lt;/h1&gt;
-&lt;h2&gt;Heading 2&lt;/h2&gt;
-&lt;h3&gt;Heading 3&lt;/h3&gt;
-&lt;h4&gt;Heading 4&lt;/h4&gt;
-&lt;h5&gt;Heading 5&lt;/h5&gt;
-&lt;h6&gt;Heading 6&lt;/h6&gt;
-        </pre>
-
-        <h2>2. Paragraph and Text Formatting</h2>
-        <p>HTML provides tags for text styling:</p>
-        <pre>
-&lt;p&gt;This is a paragraph.&lt;/p&gt;
-&lt;b&gt;Bold Text&lt;/b&gt;, &lt;i&gt;Italic Text&lt;/i&gt;, &lt;u&gt;Underlined Text&lt;/u&gt;
-        </pre>
-
-        <h2>3. Lists</h2>
-        <p>Unordered List:</p>
-        <pre>
-&lt;ul&gt;
-    &lt;li&gt;Item 1&lt;/li&gt;
-    &lt;li&gt;Item 2&lt;/li&gt;
-    &lt;li&gt;Item 3&lt;/li&gt;
-&lt;/ul&gt;
-        </pre>
-
-        <p>Ordered List:</p>
-        <pre>
-&lt;ol&gt;
-    &lt;li&gt;First&lt;/li&gt;
-    &lt;li&gt;Second&lt;/li&gt;
-    &lt;li&gt;Third&lt;/li&gt;
-&lt;/ol&gt;
-        </pre>
-
-        <h2>4. Links</h2>
-        <p>Creating hyperlinks:</p>
-        <pre>
-&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
-        </pre>
-
-        <h2>5. Images</h2>
-        <p>Adding an image:</p>
-        <pre>
-&lt;img src="image.jpg" alt="Description" width="300"&gt;
-        </pre>
-
-        <h2>6. Tables</h2>
-        <p>Creating a table:</p>
-        <pre>
-&lt;table&gt;
-    &lt;tr&gt;
-        &lt;th&gt;Name&lt;/th&gt;
-        &lt;th&gt;Age&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;John&lt;/td&gt;
-        &lt;td&gt;25&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
-        </pre>
-        <h3>Rendered Table:</h3>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-            </tr>
-            <tr>
-                <td>John</td>
-                <td>25</td>
-            </tr>
-        </table>
-
-        <h2>7. Forms</h2>
-        <p>Creating a simple form:</p>
-        <pre>
-&lt;form action="#" method="post"&gt;
-    &lt;label for="name"&gt;Name:&lt;/label&gt;
-    &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;&lt;br&gt;
-
-    &lt;label for="email"&gt;Email:&lt;/label&gt;
-    &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;&lt;br&gt;
-
-    &lt;label for="message"&gt;Message:&lt;/label&gt;&lt;br&gt;
-    &lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;
-
-    &lt;input type="submit" value="Submit"&gt;
-&lt;/form&gt;
-        </pre>
-
-        <h3>Rendered Form:</h3>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br><br>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br><br>
-
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message"></textarea><br><br>
-
-            <input type="submit" value="Submit">
-        </form>
-
-        <h2>8. Buttons</h2>
-        <p>Creating a button:</p>
-        <pre>
-&lt;button&gt;Click Me&lt;/button&gt;
-        </pre>
-        <button>Click Me</button>
-
-        <h2>9. Div and Span</h2>
-        <p>Block-level and inline elements:</p>
-        <pre>
-&lt;div style="background: lightgray; padding: 10px;"&gt;
-    This is a div (block-level).
-&lt;/div&gt;
-&lt;span style="color: red;"&gt;This is a span (inline).&lt;/span&gt;
-        </pre>
-
-        <h2>10. Audio and Video</h2>
-        <p>Embedding media:</p>
-        <pre>
-&lt;audio controls&gt;
-    &lt;source src="audio.mp3" type="audio/mp3"&gt;
-&lt;/audio&gt;
-
-&lt;video controls width="300"&gt;
-    &lt;source src="video.mp4" type="video/mp4"&gt;
-&lt;/video&gt;
-        </pre>
-
-    </div>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="#headings">Headings</a>
+    <a href="#text">Text Formatting</a>
+    <a href="#lists">Lists</a>
+    <a href="#table">Tables</a>
+    <a href="#forms">Forms</a>
+    <a href="#image">Images</a>
+    <a href="#media">Media</a>
+    <a href="#contact">Email</a>
+  </div>
+  
+  <div class="container">
+    <h1>Enhanced HTML Elements Showcase</h1>
+    
+    <!-- Headings Section -->
+    <section id="headings">
+      <h2>Headings</h2>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+    </section>
+    
+    <!-- Text Formatting Section -->
+    <section id="text">
+      <h2>Text Formatting</h2>
+      <p>This is a <b>bold</b> text, an <i>italic</i> text, and an <u>underlined</u> text.</p>
+      <p>This is <s>strikethrough</s> text and here is <mark>highlighted</mark> text.</p>
+      <p><small>This is a small text.</small></p>
+      <p>Here is some inline code: <code>console.log('Hello World');</code></p>
+      <blockquote>This is a blockquote element that can be used to quote text.</blockquote>
+    </section>
+    
+    <!-- Lists Section -->
+    <section id="lists">
+      <h2>Lists</h2>
+      <h3>Unordered List</h3>
+      <ul>
+        <li>Unordered Item 1</li>
+        <li>Unordered Item 2</li>
+        <li>Unordered Item 3</li>
+      </ul>
+      <h3>Ordered List</h3>
+      <ol>
+        <li>Ordered Item 1</li>
+        <li>Ordered Item 2</li>
+        <li>Ordered Item 3</li>
+      </ol>
+      <h3>Description List</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>JS</dt>
+        <dd>JavaScript</dd>
+      </dl>
+    </section>
+    
+    <!-- Tables Section -->
+    <section id="table">
+      <h2>Tables</h2>
+      <table>
+        <caption>Sample Table</caption>
+        <colgroup>
+          <col style="background-color: #f9f9f9;">
+          <col style="background-color: #fff;">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alice</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>27</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">End of Table</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    
+    <!-- Forms Section -->
+    <section id="forms">
+      <h2>Forms</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+        
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="us">United States</option>
+          <option value="uk">United Kingdom</option>
+          <option value="ca">Canada</option>
+          <option value="au">Australia</option>
+        </select>
+        
+        <p>Gender:</p>
+        <div class="inline-group">
+          <label><input type="radio" name="gender" value="male"> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+          <label><input type="radio" name="gender" value="other"> Other</label>
+        </div>
+        
+        <p>Interests:</p>
+        <div class="inline-group">
+          <label><input type="checkbox" name="interest" value="coding"> Coding</label>
+          <label><input type="checkbox" name="interest" value="music"> Music</label>
+          <label><input type="checkbox" name="interest" value="sports"> Sports</label>
+        </div>
+        
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    
+    <!-- Image Section -->
+    <section id="image">
+      <h2>Image</h2>
+      <img src="https://source.unsplash.com/random/500x300" alt="Random Image">
+    </section>
+    
+    <!-- Media Section -->
+    <section id="media">
+      <h2>Media</h2>
+      <h3>Audio</h3>
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <h3>Video</h3>
+      <video controls>
+        <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+    
+    <!-- Email Contact Section -->
+    <section id="contact">
+      <h2>Email Contact</h2>
+      <p>Click below to send an email:</p>
+      <a href="mailto:example@example.com">Send Email</a>
+    </section>
+  </div>
 </body>
 </html>
