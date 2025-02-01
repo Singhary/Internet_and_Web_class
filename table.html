@@ -3,261 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Enhanced HTML Elements Showcase</title>
+  <title>Table Showcase</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
       background-color: #e3f2fd;
-    }
-    .navbar {
-      background: #0d47a1;
-      padding: 15px;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      left: 0;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    .navbar a {
-      color: white;
-      text-decoration: none;
-      margin: 15px;
-      font-size: 18px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    .navbar a:hover {
-      color: #ffeb3b;
+      margin: 0;
+      padding: 20px;
     }
     .container {
-      padding-top: 80px;
-      max-width: 900px;
-      margin: auto;
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    }
-    section {
-      margin-bottom: 40px;
-      padding: 20px;
-      border: 1px solid #ddd;
+      max-width: 800px;
       background: #fff;
+      padding: 20px;
+      margin: auto;
       border-radius: 8px;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 10px;
+      margin-top: 15px;
     }
     table, th, td {
-      border: 1px solid black;
+      border: 1px solid #333;
+    }
+    th, td {
       padding: 10px;
       text-align: left;
     }
-    img, video {
-      width: 100%;
-      max-width: 500px;
-      display: block;
-      margin: auto;
-      border-radius: 10px;
-    }
-    button {
-      background: #0d47a1;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-      font-size: 16px;
-      transition: 0.3s;
-    }
-    button:hover {
-      background: #1976d2;
-    }
-    form input, form select, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      box-sizing: border-box;
-    }
-    form label {
+    caption {
+      font-size: 1.5em;
+      margin-bottom: 10px;
       font-weight: bold;
-    }
-    .inline-group {
-      display: flex;
-      gap: 20px;
-      align-items: center;
     }
   </style>
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <div class="navbar">
-    <a href="#headings">Headings</a>
-    <a href="#text">Text Formatting</a>
-    <a href="#lists">Lists</a>
-    <a href="#table">Tables</a>
-    <a href="#forms">Forms</a>
-    <a href="#image">Images</a>
-    <a href="#media">Media</a>
-    <a href="#contact">Email</a>
-  </div>
-  
   <div class="container">
-    <h1>Enhanced HTML Elements Showcase</h1>
-    
-    <!-- Headings Section -->
-    <section id="headings">
-      <h2>Headings</h2>
-      <h1>Heading 1</h1>
-      <h2>Heading 2</h2>
-      <h3>Heading 3</h3>
-      <h4>Heading 4</h4>
-      <h5>Heading 5</h5>
-      <h6>Heading 6</h6>
-    </section>
-    
-    <!-- Text Formatting Section -->
-    <section id="text">
-      <h2>Text Formatting</h2>
-      <p>This is a <b>bold</b> text, an <i>italic</i> text, and an <u>underlined</u> text.</p>
-      <p>This is <s>strikethrough</s> text and here is <mark>highlighted</mark> text.</p>
-      <p><small>This is a small text.</small></p>
-      <p>Here is some inline code: <code>console.log('Hello World');</code></p>
-      <blockquote>This is a blockquote element that can be used to quote text.</blockquote>
-    </section>
-    
-    <!-- Lists Section -->
-    <section id="lists">
-      <h2>Lists</h2>
-      <h3>Unordered List</h3>
-      <ul>
-        <li>Unordered Item 1</li>
-        <li>Unordered Item 2</li>
-        <li>Unordered Item 3</li>
-      </ul>
-      <h3>Ordered List</h3>
-      <ol>
-        <li>Ordered Item 1</li>
-        <li>Ordered Item 2</li>
-        <li>Ordered Item 3</li>
-      </ol>
-      <h3>Description List</h3>
-      <dl>
-        <dt>HTML</dt>
-        <dd>HyperText Markup Language</dd>
-        <dt>CSS</dt>
-        <dd>Cascading Style Sheets</dd>
-        <dt>JS</dt>
-        <dd>JavaScript</dd>
-      </dl>
-    </section>
-    
-    <!-- Tables Section -->
-    <section id="table">
-      <h2>Tables</h2>
-      <table>
-        <caption>Sample Table</caption>
-        <colgroup>
-          <col style="background-color: #f9f9f9;">
-          <col style="background-color: #fff;">
-        </colgroup>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Age</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Alice</td>
-            <td>22</td>
-          </tr>
-          <tr>
-            <td>Bob</td>
-            <td>27</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colspan="2">End of Table</td>
-          </tr>
-        </tfoot>
-      </table>
-    </section>
-    
-    <!-- Forms Section -->
-    <section id="forms">
-      <h2>Forms</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name">
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email">
-        
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Enter your message"></textarea>
-        
-        <label for="country">Country:</label>
-        <select id="country" name="country">
-          <option value="us">United States</option>
-          <option value="uk">United Kingdom</option>
-          <option value="ca">Canada</option>
-          <option value="au">Australia</option>
-        </select>
-        
-        <p>Gender:</p>
-        <div class="inline-group">
-          <label><input type="radio" name="gender" value="male"> Male</label>
-          <label><input type="radio" name="gender" value="female"> Female</label>
-          <label><input type="radio" name="gender" value="other"> Other</label>
-        </div>
-        
-        <p>Interests:</p>
-        <div class="inline-group">
-          <label><input type="checkbox" name="interest" value="coding"> Coding</label>
-          <label><input type="checkbox" name="interest" value="music"> Music</label>
-          <label><input type="checkbox" name="interest" value="sports"> Sports</label>
-        </div>
-        
-        <br>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-    
-    <!-- Image Section -->
-    <section id="image">
-      <h2>Image</h2>
-      <img src="https://source.unsplash.com/random/500x300" alt="Random Image">
-    </section>
-    
-    <!-- Media Section -->
-    <section id="media">
-      <h2>Media</h2>
-      <h3>Audio</h3>
-      <audio controls>
-        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-      <h3>Video</h3>
-      <video controls>
-        <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </section>
-    
-    <!-- Email Contact Section -->
-    <section id="contact">
-      <h2>Email Contact</h2>
-      <p>Click below to send an email:</p>
-      <a href="mailto:example@example.com">Send Email</a>
-    </section>
+    <h1>Table Showcase</h1>
+    <table>
+      <caption>Employee Data</caption>
+      <colgroup>
+        <col style="background-color: #f9f9f9;">
+        <col style="background-color: #fff;">
+        <col style="background-color: #f9f9f9;">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Department</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alice</td>
+          <td>28</td>
+          <td>Marketing</td>
+        </tr>
+        <tr>
+          <td>Bob</td>
+          <td>34</td>
+          <td>Development</td>
+        </tr>
+        <tr>
+          <td>Charlie</td>
+          <td>25</td>
+          <td>Design</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">End of Data</td>
+        </tr>
+      </tfoot>
+    </table>
   </div>
 </body>
 </html>
